@@ -7,9 +7,11 @@
       $scope.showMessage = function() {
         var meals;
         meals = numberOfMeal();
+        $scope["class"] = 'danger';
         if (meals.length === 0) {
           return $scope.message = 'Please enter data first';
         }
+        $scope["class"] = 'success';
         if (meals.length <= 3) {
           return $scope.message = 'Enjoy';
         }
