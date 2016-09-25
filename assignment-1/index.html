@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <script src="../angular.min.js"></script>
+  <script src="./js/app.js"></script>
+</head>
+<body ng-app='LunchCheck' ng-controller='LunchCheckController'>
+  <br>
+  <div class="container">
+    <div class="panel-group col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h3>Assignment 1</h3>
+        </div>
+        <div class="panel-body">
+          <form action="">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input class="form-control" type="text" ng-model='lunch'><br>
+                <p>{{ message }}</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>
+      <button class="btn btn-primary" ng-click='showMessage()'>
+        Check if Too Much
+      </button>
+    </div>
+  </div>
+</body>
+</html>
